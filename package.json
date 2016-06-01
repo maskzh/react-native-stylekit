@@ -1,0 +1,24 @@
+{
+  "name": "react-native-stylekit",
+  "version": "1.0.0",
+  "description": "a stylekit for react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maskzh/react-native-stylekit.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "style"
+  ],
+  "author": "maskzh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maskzh/react-native-stylekit/issues"
+  },
+  "homepage": "https://github.com/maskzh/react-native-stylekit#readme"
+}
