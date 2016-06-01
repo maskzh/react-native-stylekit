@@ -1,13 +1,8 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 // ====================================================
 //  Typography
 // ====================================================
 
-exports.default = {
+export default {
   textCenter: { textAlign: 'center' },
   textLeft: { textAlign: 'left' },
   textRight: { textAlign: 'right' },
@@ -122,5 +117,5 @@ exports.default = {
 
   thin: { fontWeight: 200 },
   regular: { fontWeight: 400 },
-  bold: { fontWeight: 700 }
-};
+  bold: { fontWeight: 700 },
+}

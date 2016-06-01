@@ -1,24 +1,19 @@
-'use strict';
+const $primary = '#337ab7'
+const $success = '#5cb85c'
+const $info = '#5bc0de'
+const $warning = '#f0ad4e'
+const $danger = '#d9534f'
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var $primary = '#337ab7';
-var $success = '#5cb85c';
-var $info = '#5bc0de';
-var $warning = '#f0ad4e';
-var $danger = '#d9534f';
+const $white = '#fff'
+const $silver = '#F4F4F4'
+const $lightgrey = '#ececec'
+const $grey = '#ccc'
+const $midgrey = '#777'
+const $darkgrey = '#444'
+const $black = '#222'
+const $trueblack = '#000'
 
-var $white = '#fff';
-var $silver = '#F4F4F4';
-var $lightgrey = '#ececec';
-var $grey = '#ccc';
-var $midgrey = '#777';
-var $darkgrey = '#444';
-var $black = '#222';
-var $trueblack = '#000';
-
-exports.default = {
+export default {
   // ====================================================
   //  Text Colors
   // ====================================================
@@ -112,5 +107,5 @@ exports.default = {
   borderDarkgrey: { borderColor: $darkgrey },
   borderBlack: { borderColor: $black },
   borderTrueblack: { borderColor: $trueblack },
-  borderTransparent: { borderColor: 'transparent' }
-};
+  borderTransparent: { borderColor: 'transparent' },
+}

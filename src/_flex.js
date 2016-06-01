@@ -1,9 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
+export default {
   // ====================================================
   //  Flex Componets
   // ====================================================
@@ -54,5 +49,5 @@ exports.default = {
   flex2: { flex: 2 },
   flex3: { flex: 3 },
   flex4: { flex: 4 },
-  flex5: { flex: 5 }
-};
+  flex5: { flex: 5 },
+}

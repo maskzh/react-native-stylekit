@@ -1,9 +1,12 @@
 {
   "name": "react-native-stylekit",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "a stylekit for react native",
-  "main": "index.js",
+  "main": "./lib",
   "scripts": {
+    "clean": "rimraf ./lib",
+    "build": "npm run clean & babel ./src --out-dir ./lib",
+    "lint": "eslint ./src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/maskzh/react-native-stylekit/issues"
   },
-  "homepage": "https://github.com/maskzh/react-native-stylekit#readme"
+  "homepage": "https://github.com/maskzh/react-native-stylekit#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "eslint": "^2.11.1",
+    "rimraf": "^2.5.2"
+  }
 }

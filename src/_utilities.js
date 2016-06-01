@@ -1,9 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
+export default {
   // overflow
   overflowHidden: { overflow: 'hidden' },
   overflowVisible: { overflow: 'visible' },
@@ -22,5 +17,5 @@ exports.default = {
   // image
   imgCover: { resizeMode: 'cover' },
   imgContain: { resizeMode: 'contain' },
-  imgStretch: { resizeMode: 'stretch' }
-};
+  imgStretch: { resizeMode: 'stretch' },
+}

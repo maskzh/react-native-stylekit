@@ -1,12 +1,7 @@
-"use strict";
+const $padding = 10
+const $margin = 10
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var $padding = 10;
-var $margin = 10;
-
-exports.default = {
+export default {
   // ====================================================
   //  Padding
   // ====================================================
@@ -138,5 +133,5 @@ exports.default = {
   mlr20: { marginLeft: $margin * 2, marginRight: $margin * 2 },
   mlr30: { marginLeft: $margin * 3, marginRight: $margin * 3 },
   mlr40: { marginLeft: $margin * 4, marginRight: $margin * 4 },
-  mlr50: { marginLeft: $margin * 5, marginRight: $margin * 5 }
-};
+  mlr50: { marginLeft: $margin * 5, marginRight: $margin * 5 },
+}
