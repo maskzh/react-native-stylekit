@@ -27,13 +27,32 @@ export default () =>
 ### borders 边框相关
 默认的 borderStyle 为 `solid`，默认的 borderColor 为 `#D9D9D9`，默认的 borderRadius 为 `5px`
 
+#### 边框类型
 下面的对象默认都有 `borderStyle` 和 `borderColor` 的样式
-- b0, bh, b1 borderWidth 分别为 0, 1px, 2px, 3px，
-- bt0, bth, bt1 上边框 borderWidth 分别为 0, 0.5, 1
-- br0, brh, br1 右边框 borderWidth 分别为 0, 0.5, 1
-- bb0, bbh, bb1 下边框 borderWidth 分别为 0, 0.5, 1
-- bl0, blh, bl1 左边框 borderWidth 分别为 0, 0.5, 1
+```js
+...
+b0: { borderWidth: 0 },
+bh: { borderWidth: 0.5, borderColor, borderStyle },
+b1: { borderWidth: 1, borderColor, borderStyle },
 
+bt0: { borderTopWidth: 0 },
+bth: { borderTopWidth: 0.5, borderColor, borderStyle },
+bt1: { borderTopWidth: 1, borderColor, borderStyle },
+
+br0: { borderRightWidth: 0 },
+brh: { borderRightWidth: 0.5, borderColor, borderStyle },
+br1: { borderRightWidth: 1, borderColor, borderStyle },
+
+bb0: { borderBottomWidth: 0 },
+bbh: { borderBottomWidth: 0.5, borderColor, borderStyle },
+bb1: { borderBottomWidth: 1, borderColor, borderStyle },
+
+bl0: { borderLeftWidth: 0 },
+blh: { borderLeftWidth: 0.5, borderColor, borderStyle },
+bl1: { borderLeftWidth: 1, borderColor, borderStyle },
+...
+```
+#### 边框其他样式
 - .rounded     { borderRadius: $borderRadius }
 - .not-rounded { borderRadius: 0 }
 
@@ -158,24 +177,7 @@ fs13: { fontSize: 13 },
 fs14: { fontSize: 14 },
 fs15: { fontSize: 15 },
 fs16: { fontSize: 16 },
-fs17: { fontSize: 17 },
-fs18: { fontSize: 18 },
-fs19: { fontSize: 19 },
-fs20: { fontSize: 20 },
-fs21: { fontSize: 21 },
-fs22: { fontSize: 22 },
-fs23: { fontSize: 23 },
-fs24: { fontSize: 24 },
-fs25: { fontSize: 25 },
-fs26: { fontSize: 26 },
-fs27: { fontSize: 27 },
-fs28: { fontSize: 28 },
-fs29: { fontSize: 29 },
-fs30: { fontSize: 30 },
-fs31: { fontSize: 31 },
-fs32: { fontSize: 32 },
-fs33: { fontSize: 33 },
-fs34: { fontSize: 34 },
+...
 fs35: { fontSize: 35 },
 fs36: { fontSize: 36 },
 ...
@@ -189,60 +191,7 @@ lh13: { lineHeight: 13 },
 lh14: { lineHeight: 14 },
 lh15: { lineHeight: 15 },
 lh16: { lineHeight: 16 },
-lh17: { lineHeight: 17 },
-lh18: { lineHeight: 18 },
-lh19: { lineHeight: 19 },
-lh20: { lineHeight: 20 },
-lh21: { lineHeight: 21 },
-lh22: { lineHeight: 22 },
-lh23: { lineHeight: 23 },
-lh24: { lineHeight: 24 },
-lh25: { lineHeight: 25 },
-lh26: { lineHeight: 26 },
-lh27: { lineHeight: 27 },
-lh28: { lineHeight: 28 },
-lh29: { lineHeight: 29 },
-lh30: { lineHeight: 30 },
-lh31: { lineHeight: 31 },
-lh32: { lineHeight: 32 },
-lh33: { lineHeight: 33 },
-lh34: { lineHeight: 34 },
-lh35: { lineHeight: 35 },
-lh36: { lineHeight: 36 },
-lh37: { lineHeight: 37 },
-lh38: { lineHeight: 38 },
-lh39: { lineHeight: 39 },
-lh40: { lineHeight: 40 },
-lh41: { lineHeight: 41 },
-lh42: { lineHeight: 42 },
-lh43: { lineHeight: 43 },
-lh44: { lineHeight: 44 },
-lh45: { lineHeight: 45 },
-lh46: { lineHeight: 46 },
-lh47: { lineHeight: 47 },
-lh48: { lineHeight: 48 },
-lh49: { lineHeight: 49 },
-lh50: { lineHeight: 50 },
-lh51: { lineHeight: 51 },
-lh52: { lineHeight: 52 },
-lh53: { lineHeight: 53 },
-lh54: { lineHeight: 54 },
-lh55: { lineHeight: 55 },
-lh56: { lineHeight: 56 },
-lh57: { lineHeight: 57 },
-lh58: { lineHeight: 58 },
-lh59: { lineHeight: 59 },
-lh60: { lineHeight: 60 },
-lh61: { lineHeight: 61 },
-lh62: { lineHeight: 62 },
-lh63: { lineHeight: 63 },
-lh64: { lineHeight: 64 },
-lh65: { lineHeight: 65 },
-lh66: { lineHeight: 66 },
-lh67: { lineHeight: 67 },
-lh68: { lineHeight: 68 },
-lh69: { lineHeight: 69 },
-lh70: { lineHeight: 70 },
+...
 lh71: { lineHeight: 71 },
 lh72: { lineHeight: 72 },
 ...
