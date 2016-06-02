@@ -30,7 +30,6 @@ export default () =>
 #### 边框类型
 下面的对象默认都有 `borderStyle` 和 `borderColor` 的样式
 ```js
-...
 b0: { borderWidth: 0 },
 bh: { borderWidth: 0.5, borderColor, borderStyle },
 b1: { borderWidth: 1, borderColor, borderStyle },
@@ -50,7 +49,6 @@ bb1: { borderBottomWidth: 1, borderColor, borderStyle },
 bl0: { borderLeftWidth: 0 },
 blh: { borderLeftWidth: 0.5, borderColor, borderStyle },
 bl1: { borderLeftWidth: 1, borderColor, borderStyle },
-...
 ```
 #### 边框其他样式
 - .rounded     { borderRadius: $borderRadius }
@@ -76,13 +74,12 @@ const $black = '#222'
 const $trueblack = '#000'
 ```
 
-文字颜色、背景颜色、边框颜色，分别使用 `colorXxx`、`bgXxx`、`borderXxx`（eg. colorSuccess、bgWhite、borderBlack）
+**文字颜色、背景颜色、边框颜色，分别使用 `colorXxx`、`bgXxx`、`borderXxx`（eg. colorSuccess、bgWhite、borderBlack）**
 
 > 提供 `textXxx` 作为 `colorXxx` 的别名
 
 额外提供如下颜色对象
 ```js
-...
 c0: { color: #000 },
 c1: { color: #111 },
 c2: { color: #222 },
@@ -99,25 +96,22 @@ cc: { color: #ccc },
 cd: { color: #ddd },
 ce: { color: #eee },
 cf: { color: #fff },
-...
 ```
 
 ### flex 栅格布局
 #### Flex 容器
 ```js
-...
 column: { flexDirection: 'column', flexWrap: 'nowrap' },
 row: { flexDirection: 'row', flexWrap: 'wrap' },
-...
 ```
 
 #### Flex 定位
 ```js
-...
 center: { alignItems: 'center', justifyContent: 'center' },
 topLeft: { alignItems: 'flex-start', justifyContent: 'flex-start' },
 bottomRight: { alignItems: 'flex-end', justifyContent: 'flex-end' },
 
+// row 和 column 定位不同，所以要分开写
 columnTopCenter: { alignItems: 'center', justifyContent: 'flex-start' },
 columnTopRight: { alignItems: 'flex-end', justifyContent: 'flex-start' },
 columnCenterLeft: { alignItems: 'flex-start', justifyContent: 'center' },
@@ -131,12 +125,10 @@ rowCenterLeft: { alignItems: 'center', justifyContent: 'flex-start' },
 rowCenterRight: { alignItems: 'center', justifyContent: 'flex-end' },
 rowBottomLeft: { alignItems: 'flex-end', justifyContent: 'flex-start' },
 rowBottomCenter: { alignItems: 'flex-end', justifyContent: 'center' },
-...
 ```
 
 #### Flex 对齐
 ```js
-...
 spaceAround: { justifyContent: 'space-around' },
 spaceBetween: { justifyContent: 'space-between' },
 
@@ -144,34 +136,28 @@ alignStart: { alignSelf: 'flex-start' },
 alignCenter: { alignSelf: 'center' },
 alignEnd: { alignSelf: 'flex-end' },
 alignStretch: { alignSelf: 'stretch' },
-...
 ```
 
 #### Flex Size
 ```js
-...
 flex1: { flex: 1 },
 flex2: { flex: 2 },
 flex3: { flex: 3 },
 flex4: { flex: 4 },
 flex5: { flex: 5 },
-...
 ```
 
 ### typography 排版相关
 #### 文本对齐
 ```js
-...
 textCenter: { textAlign: 'center' },
 textLeft: { textAlign: 'left' },
 textRight: { textAlign: 'right' },
-...
 ```
 > `tc`、`tl`、`tr` 分别作为 `textCenter`、`textLeft`、`textRight` 的别名
 
 #### 字体大小
 ```js
-...
 fs12: { fontSize: 12 },
 fs13: { fontSize: 13 },
 fs14: { fontSize: 14 },
@@ -180,12 +166,10 @@ fs16: { fontSize: 16 },
 ...
 fs35: { fontSize: 35 },
 fs36: { fontSize: 36 },
-...
 ```
 
 #### 行高
 ```js
-...
 lh12: { lineHeight: 12 },
 lh13: { lineHeight: 13 },
 lh14: { lineHeight: 14 },
@@ -194,12 +178,10 @@ lh16: { lineHeight: 16 },
 ...
 lh71: { lineHeight: 71 },
 lh72: { lineHeight: 72 },
-...
 ```
 
 #### 其他字体样式
 ```js
-...
 italic: { fontStyle: 'italic' },
 tracked: { letterSpacing: 4 },
 noTextDecoration: { textDecorationLine: 'none' },
@@ -209,23 +191,19 @@ lineThrough: { textDecorationLine: 'line-through' },
 thin: { fontWeight: 200 },
 regular: { fontWeight: 400 },
 bold: { fontWeight: 700 },
-...
 ```
 
 ### utilities 其他工具
 #### overflow
 ```js
-...
 overflowHidden: { overflow: 'hidden' },
 overflowVisible: { overflow: 'visible' },
-...
 ```
 
 > ofh，ofv 作为 overflowHidden，overflowVisible 的别名
 
 #### position
 ```js
-...
 relative: { position: 'relative' },
 absolute: { position: 'absolute' },
 
@@ -233,16 +211,13 @@ top: { top: 0 },
 right: { right: 0 },
 bottom: { bottom: 0 },
 left: { left: 0 },
-...
 ```
 
 #### image
 ```js
-...
 imgCover: { resizeMode: 'cover' },
 imgContain: { resizeMode: 'contain' },
 imgStretch: { resizeMode: 'stretch' },
-...
 ```
 
 ### whitespace 内补外补
@@ -272,11 +247,11 @@ pt50 { paddingTop: 50 },
 ptb => paddingTop & paddingBottom
 plr => paddingRight & paddingLeft
 */
-ptb0 { paddingTop: 0, padding-bottom: 0 },
-ptb5 { paddingTop: 5, padding-bottom: 5 },
-ptb10 { paddingTop: 10, padding-bottom: 10 },
+ptb0 { paddingTop: 0, paddingBottom: 0 },
+ptb5 { paddingTop: 5, paddingBottom: 5 },
+ptb10 { paddingTop: 10, paddingBottom: 10 },
 ...
-ptb5 { paddingTop: 50, padding-bottom: 50 },
+ptb5 { paddingTop: 50, paddingBottom: 50 },
 ```
 
 #### 外补
