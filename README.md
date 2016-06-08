@@ -1,4 +1,4 @@
-# React Native 样式工具箱
+# React Native 样式工具箱 [![Build Status](https://travis-ci.org/maskzh/react-native-stylekit.svg?branch=master)](https://travis-ci.org/maskzh/react-native-stylekit) [![npm version](https://img.shields.io/npm/v/react-native-stylekit.svg)](https://www.npmjs.org/package/react-native-stylekit)
 一个用于快速构建界面的样式工具库
 
 ## 安装
