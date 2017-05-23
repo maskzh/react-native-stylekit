@@ -3,8 +3,10 @@ export default {
   //  Flex Componets
   // ====================================================
 
-  column: { flexDirection: 'column', flexWrap: 'nowrap' },
-  row: { flexDirection: 'row', flexWrap: 'wrap' },
+  column: { flexDirection: 'column' },
+  row: { flexDirection: 'row' },
+  wrap: { flexWrap: 'wrap' },
+  nowrap: { flexWrap: 'nowrap' },
 
   // ====================================================
   // Positioning for Flex Items
@@ -36,10 +38,14 @@ export default {
   spaceAround: { justifyContent: 'space-around' },
   spaceBetween: { justifyContent: 'space-between' },
 
+  rowSpaceAround: { alignContent: 'space-around' },
+  rowSpaceBetween: { alignContent: 'space-between' },
+
   alignStart: { alignSelf: 'flex-start' },
   alignCenter: { alignSelf: 'center' },
   alignEnd: { alignSelf: 'flex-end' },
   alignStretch: { alignSelf: 'stretch' },
+  alignBaseline: { alignSelf: 'baseline' },
 
   // ====================================================
   //  Flex Sizing

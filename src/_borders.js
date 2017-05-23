@@ -2,11 +2,11 @@
 //  Text Colors
 // ====================================================
 
-const borderColor = '#D9D9D9'
-const borderStyle = 'solid'
-const borderRadius = 5
-
-export default {
+export default ({
+  borderColor = '#D9D9D9',
+  borderStyle = 'solid',
+  borderRadius = 5,
+}) => ({
   b0: { borderWidth: 0 },
   bh: { borderWidth: 0.5, borderColor, borderStyle },
   b1: { borderWidth: 1, borderColor, borderStyle },
@@ -29,5 +29,4 @@ export default {
 
   rounded: { borderRadius },
   notRounded: { borderRadius: 0 },
-  circle: { borderRadius: 50 }
-}
+})

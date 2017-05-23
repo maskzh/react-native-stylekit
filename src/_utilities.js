@@ -1,9 +1,11 @@
 export default {
   // overflow
-  overflowHidden: { overflow: 'hidden' },
   overflowVisible: { overflow: 'visible' },
-  ofh: { overflow: 'hidden' },
+  overflowHidden: { overflow: 'hidden' },
+  overflowScroll: { overflow: 'scroll' },
   ofv: { overflow: 'visible' },
+  ofh: { overflow: 'hidden' },
+  ofs: { overflow: 'scroll' },
 
   // position
   relative: { position: 'relative' },

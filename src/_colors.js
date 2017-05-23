@@ -1,56 +1,39 @@
-const $primary = '#337ab7'
-const $success = '#5cb85c'
-const $info = '#5bc0de'
-const $warning = '#f0ad4e'
-const $danger = '#d9534f'
+export default ({
+  primary = '#337ab7',
+  success = '#5cb85c',
+  info = '#5bc0de',
+  warning = '#f0ad4e',
+  danger = '#d9534f',
 
-const $white = '#fff'
-const $silver = '#F4F4F4'
-const $lightgrey = '#ececec'
-const $grey = '#ccc'
-const $midgrey = '#777'
-const $darkgrey = '#444'
-const $black = '#222'
-const $trueblack = '#000'
-
-export default {
+  white = '#fff',
+  silver = '#F4F4F4',
+  lightgrey = '#ececec',
+  grey = '#ccc',
+  midgrey = '#777',
+  darkgrey = '#444',
+  black = '#222',
+  trueblack = '#000',
+}) => ({
   // ====================================================
   //  Text Colors
   // ====================================================
 
-  colorPrimary: { color: $primary },
-  colorSuccess: { color: $success },
-  colorInfo: { color: $info },
-  colorWarning: { color: $warning },
-  colorDanger: { color: $danger },
+  colorPrimary: { color: primary },
+  colorSuccess: { color: success },
+  colorInfo: { color: info },
+  colorWarning: { color: warning },
+  colorDanger: { color: danger },
 
-  textPrimary: { color: $primary },
-  textSuccess: { color: $success },
-  textInfo: { color: $info },
-  textWarning: { color: $warning },
-  textDanger: { color: $danger },
-
-  colorWhite: { color: $white },
-  colorSilver: { color: $silver },
-  colorLightgrey: { color: $lightgrey },
-  colorGrey: { color: $grey },
-  colorMidgrey: { color: $midgrey },
-  colorDarkgrey: { color: $darkgrey },
-  colorBlack: { color: $black },
-  colorTrueblack: { color: $trueblack },
+  colorWhite: { color: white },
+  colorSilver: { color: silver },
+  colorLightgrey: { color: lightgrey },
+  colorGrey: { color: grey },
+  colorMidgrey: { color: midgrey },
+  colorDarkgrey: { color: darkgrey },
+  colorBlack: { color: black },
+  colorTrueblack: { color: trueblack },
   colorInherit: { color: 'inherit' },
   colorTransparent: { color: 'transparent' },
-
-  textWhite: { color: $white },
-  textSilver: { color: $silver },
-  textLightgrey: { color: $lightgrey },
-  textGrey: { color: $grey },
-  textMidgrey: { color: $midgrey },
-  textDarkgrey: { color: $darkgrey },
-  textBlack: { color: $black },
-  textTrueblack: { color: $trueblack },
-  textInherit: { color: 'inherit' },
-  textTransparent: { color: 'transparent' },
 
   c0: { color: '#000' },
   c1: { color: '#111' },
@@ -73,39 +56,39 @@ export default {
   //  Background Colors
   // ====================================================
 
-  bgPrimary: { backgroundColor: $primary },
-  bgSuccess: { backgroundColor: $success },
-  bgInfo: { backgroundColor: $info },
-  bgWarning: { backgroundColor: $warning },
-  bgDanger: { backgroundColor: $danger },
+  bgPrimary: { backgroundColor: primary },
+  bgSuccess: { backgroundColor: success },
+  bgInfo: { backgroundColor: info },
+  bgWarning: { backgroundColor: warning },
+  bgDanger: { backgroundColor: danger },
 
-  bgWhite: { backgroundColor: $white },
-  bgSilver: { backgroundColor: $silver },
-  bgLightgrey: { backgroundColor: $lightgrey },
-  bgGrey: { backgroundColor: $grey },
-  bgMidgrey: { backgroundColor: $midgrey },
-  bgDarkgrey: { backgroundColor: $darkgrey },
-  bgBlack: { backgroundColor: $black },
-  bgTrueblack: { backgroundColor: $trueblack },
+  bgWhite: { backgroundColor: white },
+  bgSilver: { backgroundColor: silver },
+  bgLightgrey: { backgroundColor: lightgrey },
+  bgGrey: { backgroundColor: grey },
+  bgMidgrey: { backgroundColor: midgrey },
+  bgDarkgrey: { backgroundColor: darkgrey },
+  bgBlack: { backgroundColor: black },
+  bgTrueblack: { backgroundColor: trueblack },
   bgTransparent: { backgroundColor: 'transparent' },
 
   // ====================================================
   //  Border Colors
   // ====================================================
 
-  borderPrimary: { borderColor: $primary },
-  borderSuccess: { borderColor: $success },
-  borderInfo: { borderColor: $info },
-  borderWarning: { borderColor: $warning },
-  borderDanger: { borderColor: $danger },
+  borderPrimary: { borderColor: primary },
+  borderSuccess: { borderColor: success },
+  borderInfo: { borderColor: info },
+  borderWarning: { borderColor: warning },
+  borderDanger: { borderColor: danger },
 
-  borderWhite: { borderColor: $white },
-  borderSilver: { borderColor: $silver },
-  borderLightgrey: { borderColor: $lightgrey },
-  borderGrey: { borderColor: $grey },
-  borderMidgrey: { borderColor: $midgrey },
-  borderDarkgrey: { borderColor: $darkgrey },
-  borderBlack: { borderColor: $black },
-  borderTrueblack: { borderColor: $trueblack },
+  borderWhite: { borderColor: white },
+  borderSilver: { borderColor: silver },
+  borderLightgrey: { borderColor: lightgrey },
+  borderGrey: { borderColor: grey },
+  borderMidgrey: { borderColor: midgrey },
+  borderDarkgrey: { borderColor: darkgrey },
+  borderBlack: { borderColor: black },
+  borderTrueblack: { borderColor: trueblack },
   borderTransparent: { borderColor: 'transparent' },
-}
+})

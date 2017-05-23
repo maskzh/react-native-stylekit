@@ -5,4 +5,12 @@ import _typography from './_typography'
 import _whitespace from './_whitespace'
 import _utilities from './_utilities'
 
-export default Object.assign({}, _borders, _colors, _flex, _typography, _whitespace, _utilities)
+export default variables => Object.assign(
+  {},
+  _borders(variables),
+  _colors(variables),
+  _flex,
+  _typography,
+  _whitespace,
+  _utilities,
+)

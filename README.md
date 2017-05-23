@@ -10,7 +10,9 @@ npm i react-native-stylekit --save
 ```shell
 import React from 'react'
 import { View } from 'react-native'
-import SK from 'react-native-stylekit'
+import stylekit from 'react-native-stylekit'
+
+const SK = stylekit({ borderColor: '#eee' })
 
 export default () =>
   <View style={[SK.p1, SK.m1]}></View>
